@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+html {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--light-gray);
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    min-width: 285px;
+    max-width: 450px;
+    width: 85%;
+    margin: 2rem auto;
+    text-align: left;
+
+}
+
+header {
+    margin: auto;
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+
+}
+
+header h3 {
+    color: var(--cyan);
+    font-size: 1.3rem;
+}
+
+header h4 {
+    color: var(--bright-yellow);
+    font-size: 1rem;
+
+}
+
+header p {
+    color: rgb(186, 192, 202);
+    line-height: 1.8;
+    font-size: 0.825rem;
+    font-weight: 700;
+
+}
+
+.pricing {
+    background-color: var(--cyan);
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+
+}
+
+.pricing h3 {
+    margin-top: 0;
+    color: whitesmoke;
+}
+
+.price {
+    color: whitesmoke;
+    font-size: 2.2rem;
+}
+
+.price-frequency {
+    color: #F8F8F8;
+    vertical-align: super;
+    opacity: 0.5;
+    padding-left: 0.6rem;
+}
+
+.pricing p {
+    color: whitesmoke;
+    opacity: 0.9;
+    margin: 0.5rem 0;
+}
+
+button {
+    margin: 1.5rem auto 0.8rem auto;
+    display: block;
+    width: 100%;
+    padding: 0.8rem 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    opacity: 0.9;
+    color: white;
+    background-color: var(--bright-yellow);
+    border: none;
+}
+
+
+
+
+.why-us {
+    background-color: var(--cyan);
+    opacity: 0.80;
+    padding: 1rem 1.5rem;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.why-us h4 {
+    margin-top: 0.5rem;
+    margin-bottom: 1.2rem;
+    color: whitesmoke;
+    font-size: 1.2rem;
+}
+
+.why-us p {
+    color: #F8F8F8;
+    opacity: 0.7;
+    margin: 0.5rem auto;
+    font-size: 0.85rem;
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+    body {
+        display: flex;
+        align-items: center;
+        flex-flow: row wrap;
+        max-width: 920px;    
+    }
+
+    header {
+        flex-basis: 100%;
+    }
+
+    .pricing {
+        flex-basis: 50%;
+        flex: 2;
+        padding: 1.5rem 1.5rem 1rem 1.5rem;
+        height: 13rem;
+        border-radius: 0px 0px 0px 5px;
+    }
+
+    .why-us {
+        flex-basis: 50%;
+        flex: 2;
+        height: 13.5rem;
+        border-radius: 0px 0px 5px 0px;
+    }
+
+    footer {
+        flex-basis: 100%;
+        margin-top: 1rem;
+    }
+}
