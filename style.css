@@ -94,8 +94,10 @@ button {
     border: none;
 }
 
-
-
+button:hover {
+    background-color: white;
+    color: var(--bright-yellow);
+}
 
 .why-us {
     background-color: var(--cyan);
